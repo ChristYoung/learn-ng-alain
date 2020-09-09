@@ -45,6 +45,8 @@ export class StartupService {
       const res: any = appData;
       // Application information: including site name, description, year
       this.settingService.setApp(res.app);
+      // layout infomation: using fixed
+      this.settingService.setLayout(`fixed`, true);
       // User information: including name, avatar, email address
       this.settingService.setUser(res.user);
       // ACL: Set the permissions to full, https://ng-alain.com/acl/getting-started
