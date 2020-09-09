@@ -22,7 +22,7 @@
           "children": [
             {
               "text": "系统首页",
-              "link": "/dashboard/v1",
+              "link": "/home/over-view",
               "i18n": "系统首页"
             }
           ]
