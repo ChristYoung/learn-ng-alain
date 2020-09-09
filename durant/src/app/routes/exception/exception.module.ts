@@ -1,3 +1,4 @@
+// 存放所有错误页面
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
 
@@ -8,12 +9,9 @@ import { Exception404Component } from './404.component';
 import { Exception500Component } from './500.component';
 import { ExceptionTriggerComponent } from './trigger.component';
 
-const COMPONENTS = [Exception403Component, Exception404Component, Exception500Component, ExceptionTriggerComponent];
-const COMPONENTS_NOROUNT = [];
-
 @NgModule({
   imports: [SharedModule, ExceptionRoutingModule],
-  declarations: [...COMPONENTS, ...COMPONENTS_NOROUNT],
-  entryComponents: COMPONENTS_NOROUNT,
+  declarations: [Exception403Component, Exception404Component, Exception500Component, ExceptionTriggerComponent],
+  entryComponents: [],
 })
-export class ExceptionModule {}
+export class ExceptionModule { }
