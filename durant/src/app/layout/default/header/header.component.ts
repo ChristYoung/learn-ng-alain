@@ -17,7 +17,7 @@ export class HeaderComponent {
     return this.settings.layout.collapsed;
   }
 
-  constructor(private settings: SettingsService) {}
+  constructor(private settings: SettingsService) { }
 
   toggleCollapsedSidebar() {
     this.settings.setLayout('collapsed', !this.settings.layout.collapsed);
