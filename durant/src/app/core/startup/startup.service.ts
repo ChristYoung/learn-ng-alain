@@ -63,6 +63,7 @@ export class StartupService {
   }
 
   load(): Promise<any> {
+    console.log(location.href);
     // only works with promises
     // https://github.com/angular/angular/issues/15088
     return new Promise((resolve, reject) => {
